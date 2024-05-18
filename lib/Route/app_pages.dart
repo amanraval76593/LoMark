@@ -1,7 +1,8 @@
 import 'package:get/get.dart';
 import 'package:lomark/Route/app_routes.dart';
-import 'package:lomark/views/screens/home_scree.dart';
+import 'package:lomark/views/screens/seller/home_scree.dart';
 import 'package:lomark/views/screens/login_screen.dart';
+import 'package:lomark/views/screens/seller/profile_screen.dart';
 import 'package:lomark/views/screens/welcome_screen.dart';
 
 class AppPages {
@@ -17,6 +18,10 @@ class AppPages {
     GetPage(
       name: AppRoutes.home,
       page: () => HomeScreen(),
-    )
+    ),
+    GetPage(
+      name: AppRoutes.profile,
+      page: () => ProfileScreen(),
+    ),
   ];
 }
